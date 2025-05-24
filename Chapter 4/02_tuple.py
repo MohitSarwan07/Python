@@ -1,0 +1,7 @@
+m = (2,3,56,78,345,678,False,78,"Harry","Mohit")
+#print(type(m))
+#a = m.count(78)
+#print(a)
+# i = m.index(678)
+# print(i)
+# print(len(m))
