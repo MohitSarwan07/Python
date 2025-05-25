@@ -1,0 +1,19 @@
+class Programmer:
+    Name = ""
+    language = ""
+    salary = int
+    print("Welcome to Microsoft Programmers Dashboard: \n")
+
+    def __init__(self,Name,salary,language):
+        self.Name = Name
+        self.salary = salary
+        self.language = language
+
+harry = Programmer("Harry",1200000,"Python")
+print(f"Name: {harry.Name}\nLanguage of Expertise: {harry.language}\nSalary offered: {harry.salary}\n")
+mohit = Programmer("Mohit",1700000,"Java")
+print(f"Name: {mohit.Name}\nLanguage of Expertise: {mohit.language}\nSalary offered: {mohit.salary}\n")
+rahul = Programmer("Rahul",1500000,"Javascript")
+print(f"Name: {rahul.Name}\nLanguage of Expertise: {rahul.language}\nSalary offered: {rahul.salary}\n")
+prakarsh = Programmer("Prakarsh",1300000,"C++")
+print(f"Name: {prakarsh.Name}\nLanguage of Expertise: {prakarsh.language}\nSalary offered: {prakarsh.salary}\n")
