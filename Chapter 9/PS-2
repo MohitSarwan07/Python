@@ -1,0 +1,15 @@
+import math
+n = int(input("Enter a number: "))
+class calculator:
+    Square = n**2
+    Cube = n**3
+    Square_root = math.sqrt(n)
+
+
+    def __init__(self,Square,Cube,Square_root):
+        self.Square = Square 
+        self.Cube = Cube
+        self.Square_root = Square_root
+
+number = calculator(Square=n**2,Cube=n**3,Square_root=round(math.sqrt(n),2))
+print(f"Square: {number.Square}\nCube: {number.Cube}\nSquare Root: {number.Square_root}")
