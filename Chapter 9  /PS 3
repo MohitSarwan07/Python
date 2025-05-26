@@ -1,4 +1,4 @@
-mport random
+import random
 online = "Bookings through Online platform" 
 Offline = "Bookings directly from the Central station"
 Travel_Agent = "Bookings through a travel agent"
