@@ -1,0 +1,32 @@
+mport random
+online = "Bookings through Online platform" 
+Offline = "Bookings directly from the Central station"
+Travel_Agent = "Bookings through a travel agent"
+Package = {"Non A\C" : 800, 
+           "A\C with no space" : 1000,
+           "A\C with extra space" : 1200
+           }
+class Train:
+    reservations = online,Offline,Travel_Agent
+    Seat_status = random.randint(2,200)
+    Fare = Package
+
+
+    def __init__(self,reservations,Seat_status,Fare):
+        self.reservations = reservations
+        self.Seat_status = Seat_status
+        self.Fare = Fare
+
+    @staticmethod
+    def Indian_Railways():
+        print("\nNamaste \U0001F64F " , "Indian Railways Mein Aapka Swagat Hai! \n")
+
+a = Train(online,random.randint(2,200), Package.get("Non A\C"))
+a.Indian_Railways()
+print(f"Reservations : {a.reservations}\nCurrently Available Seats : {a.Seat_status}\nTotal Fare for Non A\C : {a.Fare} \n")
+
+b = Train(Offline,random.randint(2,200), Package.get("A\C with no space"))
+print(f"Reservations : {b.reservations}\nCurrently Available Seats : {b.Seat_status}\nTotal Fare for A\C with no space : {b.Fare} \n")
+
+c = Train(Travel_Agent,random.randint(2,200), Package.get("A\C with extra space"))
+print(f"Reservations : {c.reservations}\nCurrently Available Seats : {c.Seat_status}\nTotal Fare for A\C with extra space : {c.Fare}")
